@@ -1,0 +1,2 @@
+# LanguageManager
+Application Language Manager
