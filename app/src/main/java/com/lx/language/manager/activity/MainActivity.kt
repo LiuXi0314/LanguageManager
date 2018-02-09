@@ -1,18 +1,18 @@
 package com.lx.language.manager.activity
 
 import android.content.Intent
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.lx.language.manager.R
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+class MainActivity : BaseActivity() {
+    override fun setContView() {
         setContentView(R.layout.activity_main)
-        
+    }
+
+    override fun refreshUi() {
+        setSupportActionBar(toolbar)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LanguageActivity::class.java))
         }
         return true
-
 
     }
 }

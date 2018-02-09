@@ -5,4 +5,6 @@
 
     <string name="language_change">切换语言</string>
 
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
 </resources>
